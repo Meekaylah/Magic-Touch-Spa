@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <title>Registration Form: New Client In-take Form</title>
+    <link rel="stylesheet" type="text/css" href="./css/main.css">
+    <link rel="stylesheet" href="./css/navbar.css">
+    <link rel="stylesheet" href="./css/footer.css">
+    <link rel="stylesheet" href="https://coolors.co/0077b6"/>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Montserrat&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" />
+</head>
+<body style="background-color: #90E0EF;" class="light">
+    <header src="./css/navbar.css">
+        <nav class="navbar">
+            <ul>
+                <li class="navbar-logo"><a href="index.html"><img src="./images/again.png" alt="Magic Touch"></a></li>
+                <li class="navbar-toggle"><i class="fas fa-bars"></i></li>
+                <li class="navbar-links"><a href="index.html#about-us">About Us</a></li>
+                <li class="navbar-links"><a href="index.html#service-display">Services</a></li>
+                <li class="navbar-links"><a href="index.html#testimonials">Testimonials</a></li>
+                <li class="navbar-links"><a href="ContactUs.html">Contact Us</a></li>
+                <li class="navbar-links"><a href="Register.html" class="register btn">Register</a></li>
+            </ul>
+        </nav>
+    </header>
+    <br>
+    <div class="selector">PLEASE FILL OUT APPROPRIATELY</div>
+        <div class="formcontainer">
+            <fieldset class="field">
+                <form id="myForm">
+                    <div id="Username" class="form-item fields name required">
+                        <br>
+                        <p class="name" style="font-family:'Lato', sans-serif; color: darkorchid; font-weight: 600; font-size: medium; font-style: bold;">Name</p>
+                                <label class="caption">
+                                    Firstname <input class="usernameinput" style="font-family: 'Montserrat', sans-serif; font-size: small;" type="text" id="f_name" spellcheck="false" maxlength="30" data-title="First" aria-required="true"></input>
+                                    <span class="caption-text"></span>
+                                </label> 
+                                <label class="caption">
+                                    Lastname <input class="usernameinput" style="font-family: 'Montserrat', sans-serif; font-size: small;" type="text" id="l_name" spellcheck="false" maxlength="30" data-title="First" aria-required="true"></input>
+                                    <span class="caption-text"></span>
+                                </label>
+                            <br><br>
+
+                        <p style="font-family:'Lato', sans-serif; color: darkorchid; font-weight: 600; font-size: medium; font-style: bold;" class="mail">E-mail</p>
+                            <input style="font-family: 'Montserrat', sans-serif; color: darkorchid;" type="email" id="email_ad"/>
+                            <br><br>
+
+                        <p style="font-family: 'Lato', sans-serif; color: darkorchid; font-weight: 600; font-size: medium; font-style: bold;" class="phone">Phone Number</p>
+                            <input style="font-family: 'Montserrat', sans-serif;" type="tel" id="phone"/>
+                            <br><br>
+
+                        <p style="font-family: 'Lato', sans-serif; color: darkorchid; font-weight: 600; font-size: medium; font-style: bold;" class="sex">Gender</p>
+                            Male<input style="font-family: 'Montserrat', sans-serif; color: darkorchid; font-size: small;"
+                                type="radio" name="gender" id="sex" value="Male">
+                            Female<input style="font-family: 'Montserrat', sans-serif; color: darkorchid; font-size: small;"
+                                type="radio" name="gender" id="sex" value="Female">
+                            Binary<input style="font-family: 'Montserrat', sans-serif; color: darkorchid; font-size: small;"
+                                type="radio" name="gender" id="sex" value="Binary">
+                            <br><br>
+
+                        <p style="font-family: 'Lato', sans-serif; color: darkorchid; font-weight: 600; font-size: medium; font-style: bold;" id="result" class="homeAd">Address</p>
+                            <textarea name="address" rows="2" id="addres" cols="70" style="font-family: 'Montserrat', sans-serif; color: darkorchid;" id="address"></textarea>
+                            <br><br>
+
+                        <p style="font-family: 'Lato', sans-serif; color: darkorchid; font-weight: 600; font-size: medium; font-style: bold;" id="result1" class="homeAd1">Address 1</p>
+                            <textarea name="address_new" rows="2" id="addres1" cols="70" style="font-family: 'Montserrat', sans-serif; color: darkorchid;" id="address1"></textarea>
+                            <br><br>
+                            
+                        <p style="font-family: 'Lato', sans-serif; color: darkorchid; font-weight: 600; font-size: medium; font-style: bold;" class="state">State of Residence</p>
+                            <select style="font-family: 'Montserrat', sans-serif;" name="location" id="state_addr">
+                                <option>Abuja</option>
+                                <option>Lagos</option>
+                            </select>
+                            <br><br>
+
+                        <p style="font-family: 'Lato', sans-serif; margin: auto; color: darkorchid; font-size: medium; font-weight: 600; font-style: bold;" class="age">Age</p>
+                            <input style="font-family: 'Montserrat', sans-serif; margin-right: auto;" type="number" name="date" id="age">
+                            <br><br>
+                
+                        <p style="font-family: 'Lato', sans-serif; color: darkorchid; font-weight: 600; font-size: medium; font-style: bold;" class="work">Occupation</p>
+                            <input style="font-family: 'Montserrat', sans-serif;" type="text" id="job">
+                            <br><br>
+
+                        <p style="font-family: 'Lato', sans-serif; color: darkorchid; font-weight: 600; font-style: bold;" class="emergphone">Emergency Contact</p>
+                            <input style="font-family: 'Montserrat', sans-serif;" type="tel" id="fam_phone">
+                            <br><br>
+                
+                        <p style="font-family: 'Lato', sans-serif; color: darkorchid; font-weight: 600; font-style: bold;" class="lasttime">Date of Initial Visit</p>
+                             <input style="font-family: 'Montserrat', sans-serif;" type="date" id="phone">
+                            <br><br>
+
+                        <p style="font-family: 'Lato', sans-serif; color: darkorchid; font-weight: 600; font-style: bold;" class="q1">Have you ever had a professional massage?</p>
+                            <select style="font-family: 'Montserrat', sans-serif;" type="option" id="q1">
+                                <option>Yes</option>
+                                <option>No</option>
+                            </select>
+                            <br><br>
+
+                        <p style="font-family: 'Lato', sans-serif; color: darkorchid; font-weight: 600; font-style: bold;" class="q2">Have you ever had Fascial Counterstrain?</p>
+                            <select style="font-family: 'Montserrat', sans-serif;" type="option" id="q2">
+                                <option>Yes</option>
+                                <option>No</option>
+                            </select>
+                            <br><br>
+                
+                        <p style="font-family: 'Lato', sans-serif; color: darkorchid; font-weight: 600; font-style: bold;" class="q3">Do you have any difficulty lying on your front, back or side?</p>
+                            <select style="font-family: 'Montserrat', sans-serif;" type="option" id="q3">
+                                <option>Yes</option>
+                                <option>No</option>
+                            </select>
+                            <br><br>
+                
+                        <p style="font-family: 'Lato', sans-serif; color: darkorchid; font-weight: 600; font-style: bold;" class="q4">Do you sit for long hours at a workstation, computer or driving?</p>
+                            <select style="font-family: 'Montserrat', sans-serif;" type="option" id="q3">
+                                <option>Yes</option>
+                                <option>No</option>
+                            </select>
+                            <br><br>
+
+                        <p style="font-family: 'Lato', sans-serif; color: darkorchid; font-weight: 600; font-style: bold;" id="result2">If Yes, please describe: </p>
+                            <textarea name="address_new" rows="2" id="addres2" cols="70" style="font-family: 'Montserrat', sans-serif;"></textarea>
+                            <br><br>
+                    
+                        <p style="font-family: 'Lato', sans-serif; color: darkorchid; font-weight: 600; font-style: bold;" class="q5">Do you perform any repetitive movement in your work, sports or hobbies?</p>
+                            <select style="font-family: 'Montserrat', sans-serif;" type="option" id="q4">
+                                <option>Yes</option>
+                                <option>No</option>
+                            </select>
+                            <br><br>
+                            
+                        <p style="font-family: 'Lato', sans-serif; color: darkorchid; font-weight: 600; font-style: bold;" id="result3" >If Yes, please describe: </p>
+                            <textarea name="address_new" rows="2" id="addres3" cols="70" style="font-family: 'Montserrat', sans-serif;"></textarea>
+                            <br><br>
+                            
+                        <p style="font-family: 'Lato', sans-serif; color: darkorchid; font-weight: 600; font-style: bold;" class="q6">Are there areas in your body with tension, stiffness, pain or other discomfort?</p>
+                            <select style="font-family: 'Montserrat', sans-serif;" type="option" id="q5">
+                                <option>Yes</option>
+                                <option>No</option>
+                            </select>
+                            <br><br>
+
+                        <p style="font-family: 'Lato', sans-serif; color: darkorchid; font-weight: 600; font-style: bold;" id="result4">If Yes, please describe: </p>
+                            <textarea name="address_new" rows="2" id="address4" cols="70" style="font-family: 'Montserrat', sans-serif;"></textarea>
+                            <br><br>
+
+                        <p style="font-family: 'Lato', sans-serif; color: darkorchid; font-weight: 600; font-style: bold;" class="q7">Medical History</p>
+                            <div class="description" style="font-family: 'Montserrat', sans-serif;">Please check any condition listed below that applies to you:</div>
+                            <div class="option"><label><input type="checkbox" name="checkbox-field1" id value="contagious skin disease"/> contagious skin disease</label></div>
+                            <div class="option"><label><input type="checkbox" name="checkbox-field2" value="open sores or wounds"/> open sores or wounds</label></div>
+                            <div class="option"><label><input type="checkbox" name="checkbox-field3" value="easy bruising"/> easy bruising</label></div>
+                            <div class="option"><label><input type="checkbox" name="checkbox-field4" value="recent accident, injury or surgery"/> recent accident, injury or surgery</label></div>
+                            <div class="option"><label><input type="checkbox" name="checkbox-field5" value="artificial joint"/> artificial joint</label></div>
+                            <div class="option"><label><input type="checkbox" name="checkbox-field6" value="allergies/sensitivities"/> allergies/sensitivities</label></div>
+                            <div class="option"><label><input type="checkbox" name="checkbox-field7" value="heart condition"/> heart condition</label></div>
+                            <div class="option"><label><input type="checkbox" name="checkbox-field8" value="high or low blood pressure"/> high or low blood pressure</label></div>
+                            <div class="option"><label><input type="checkbox" name="checkbox-field9" value="digestive dysfunction (GERD, IBD, IBS...)"/> digestive dysfunction (GERD, IBD, IBS...)</label></div>
+                            <div class="option"><label><input type="checkbox" name="checkbox-field10" value="circulatory disorder"/> circulatory disorder</label></div>
+                            <div class="option"><label><input type="checkbox" name="checkbox-field11" value="atherosclerosis"/> atherosclerosis</label></div>
+                            <div class="option"><label><input type="checkbox" name="checkbox-field12" value="carpel tunnel syndrom"/> carpel tunnel syndrom</label></div>
+                            <div class="option"><label><input type="checkbox" name="checkbox-field13" value="thoracic outlet syndrome"/> thoracic outlet syndrome</label></div>
+                            <div class="option"><label><input type="checkbox" name="checkbox-field14" value="phlebitis"/> phlebitis</label></div>
+                            <div class="option"><label><input type="checkbox" name="checkbox-field15" value="deep vein thrombosis/blood clots"/> deep vein thrombosis/blood clots</label></div>
+                            <div class="option"><label><input type="checkbox" name="checkbox-field16" value="joint disorder/ RA/ osteoarthritis/ tendonitis"/> joint disorder/ RA/ osteoarthritis/ tendonitis</label></div>
+                            <div class="option"><label><input type="checkbox" name="checkbox-field17" value="osteoporosis"/> osteoporosis</label></div>
+                            <div class="option"><label><input type="checkbox" name="checkbox-field18" value="epilepsy"/> epilepsy</label></div>
+                            <div class="option"><label><input type="checkbox" name="checkbox-field19" value="headaches/ migraines/ cluster headaches"/> headaches/ migraines/ cluster headaches</label></div>
+                            <div class="option"><label><input type="checkbox" name="checkbox-field20" value="cancer"/> cancer</label></div>
+                            <div class="option"><label><input type="checkbox" name="checkbox-field21" value="diabetes"/> diabetes</label></div>
+                            <div class="option"><label><input type="checkbox" name="checkbox-field22" value="decreased sensation"/> decreased sensation</label></div>
+                            <div class="option"><label><input type="checkbox" name="checkbox-field23" value="back/ neck problems"/> back/ neck problems</label></div>
+                            <div class="option"><label><input type="checkbox" name="checkbox-field24" value="TMJ disorder"/> TMJ disorder</label></div>
+                            <div class="option"><label><input type="checkbox" name="checkbox-field25" value="medial or lateral epicondylitis (tennis or golfer's elbow)"/> medial or lateral epicondylitis (tennis or golfer's elbow)</label></div>
+                            <div class="option"><label><input type="checkbox" name="checkbox-field26" value="pregnancy"/> pregnancy</label></div>
+                            <br>
+                    </div>
+                    </div>
+
+                    
+                </form>
+            </div>
+        </div>
+        <footer>
+            <div class="footer-distributed">
+    
+                <div class="footer-left">
+                    <img src="./images/favicon.png" alt="Magic Touch">
+                    <!-- <h3>Magic<span>Touch</span></h3> -->
+                </div>
+    
+                <form class="footer-center-1" submit>
+                    <span id="join">Join our Newsletter Today!</span>
+                    <input type="email" name="email" id="email" placeholder="Type In Your E-mail"><br>
+                    <button class="submit btn" type="submit" for="email">Submit</button>
+                </form>
+    
+                <div class="footer-center">
+                    <span id="find-us">Find Us Here</span>
+                    <i class="fa-solid fa-location-dot"></i><span>Plot 13, Vanny Estate, Ojodu, Ikeja, Lagos</span><br><br>
+                    <i class="fa-solid fa-phone"></i><span><a href="tel:123456789">+234 907 2345 123</a><br><a href="tel:123456789">+234 801 2346 456</a></span><br><br>
+                    <i class="fa-solid fa-envelope"></i><span><a href="https://mail.google.com/">info@magictouch.com</a></span>
+                </div>
+                <div class="footer-right">
+                    <p class="footer-company-about">
+                        <span>Useful Links</span>
+                        <p class="footer-links">
+                            <a href="#">Home</a>
+                            |
+                            <a href="#">About</a>
+                            |
+                            <a href="#">Services</a>
+                            |
+                            <a href="#">Contact Us</a>
+                        </p>
+                    </p>
+                    <div class="footer-icons">
+                        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                        <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                        <a href="#"><i class="fa-brands fa-snapchat"></i></a>
+                        <a href="#"><i class="fa-brands fa-tiktok"></i></a>
+                    </div>
+                </div>
+            </div>
+            <p class="footer-company-name">Copyright © 2022 <strong>MagicTouch</strong> All rights reserved</p>
+        </footer>
+        <!----End Of Footer------>
+
+        <script>
+
+        </script>
+</body>
+</html>

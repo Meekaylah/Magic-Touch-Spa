@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Magic Touch</title>
+    <link rel="icon" href="./images/favicon.png">
+    <link rel="stylesheet" href="./css/navbar.css">
+    <link rel="stylesheet" href="./css/footer.css">
+    <link rel="stylesheet" type="text/css" href="./css/main.css">
+    <link rel="stylesheet" href="https://coolors.co/0077b6"/>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Montserrat&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" />
+  </head>
+
+  <body style="background-color: #90E0EF;">
+    <header>
+        <nav class="navbar">
+            <ul>
+                <li class="navbar-logo"><a href="index.html"><img src="./images/again.png" alt="Magic Touch"></a></li>
+                <li class="navbar-toggle"><i class="fas fa-bars"></i></li>
+                <li class="navbar-links"><a href="index.html#about-us">About Us</a></li>
+                <li class="navbar-links"><a href="index.html#service-display">Services</a></li>
+                <li class="navbar-links"><a href="index.html#testimonials">Testimonials</a></li>
+                <li class="navbar-links"><a href="ContactUs.html">Contact Us</a></li>
+                <li class="navbar-links"><a href="Register.html" class="register btn">Register</a></li>
+            </ul>
+        </nav>
+    </header>
+    <button class="return"><a href="index.html">< BACK</a></button>
+
+    <div class="selector">SCHEDULE YOUR MASSAGE SESSION</div>
+    <div class="container">
+        <div class="sub-container">
+            <div class="top">YOUR APPOINTMENT</div>
+            <div class="duration">1hr 30mins</div>
+            <div class="box">
+                <h2>Thai Massage</h2>
+                <p>Your Thai massage session will be with Titi Aremu</p>
+            </div>
+        </div>
+        <div class="sub-container">
+            <div class="calendar">
+                <div class="calendar-header">
+                    <span class="month-picker" id="month-picker">
+                        May
+                    </span>
+                    <div class="year-picker">
+                        <span class="year-change" id="prev-year">
+                            <pre><</pre>
+                        </span>
+                        <span id="year">2022</span>
+                        <span class="year-change" id="next-year">
+                            <pre>></pre>
+                        </span>
+                    </div>
+                </div>
+                <div class="calendar-body">
+                    <div class="calendar-week-day">
+                        <div>Sun</div>
+                        <div>Mon</div>
+                        <div>Tue</div>
+                        <div>Wed</div>
+                        <div>Thu</div>
+                        <div>Fri</div>
+                        <div>Sat</div>
+                    </div>
+
+                    <div class="calendar-days">
+                        <div>
+                            1
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
+                        <div>2</div>
+                        <div>3</div>
+                        <div>4</div>
+                        <div>5</div>
+                        <div>6</div>
+                        <div>7</div>
+                        <div>1</div>
+                        <div>2</div>
+                        <div>3</div>
+                        <div>4</div>
+                        <div>5</div>
+                        <div>6</div>
+                        <div>7</div>
+                    </div>
+                </div>
+
+                    <div class="calendar-footer">
+                        <div class="toggle">
+                            <span>Dark Mode</span>
+                            <div class="dark-mode-switch">
+                                <div class="dark-mode-switch-ident"></div>
+                            </div>
+                        </div>
+                    </div>
+                <div class="month-list"></div>
+            </div>
+        </div>
+        <div class="sub-container">
+            <div class="box2">
+                <br><p class="timeOfDay">Morning</p><br>
+                <button class="time" onclick="checkIff()" type="submit"><a href="congratulations.html">9:00am</a></button>
+                <button class="time" onclick="checkIff()" type="submit"><a href="congratulations.html">10:45am</a></button><br>
+                <br><p class="timeOfDay">Afternoon</p><br>
+                <button class="time" onclick="checkIff()" type="submit"><a href="congratulations.html">12:00pm</a></button>
+                <button class="time" onclick="checkIff()" type="submit"><a href="congratulations.html">2:00pm</a></button>
+                <button class="time" onclick="checkIff()" type="submit"><a href="congratulations.html">3:30pm</a></button><br>
+                <br><p class="timeOfDay">Evening</p><br>
+                <button class="time" onclick="checkIff()" type="submit"><a href="congratulations.html">4:50pm</a></button>
+                <button class="time" onclick="checkIff()" type="submit"><a href="congratulations.html">6:00pm</a></button>
+                
+            </div>
+        </div>
+    </div>
+    
+    <footer>
+        <div class="footer-distributed">
+
+            <div class="footer-left">
+                <img src="./images/favicon.png" alt="Magic Touch">
+                <!-- <h3>Magic<span>Touch</span></h3> -->
+            </div>
+
+            <form class="footer-center-1" submit>
+                <span id="join">Join our Newsletter Today!</span>
+                <input type="email" name="email" id="email" placeholder="Type In Your E-mail"><br>
+                <button class="submit btn" type="submit" for="email">Submit</button>
+            </form>
+
+            <div class="footer-center">
+                <span id="find-us">Find Us Here</span>
+                <i class="fa-solid fa-location-dot"></i><span>Plot 13, Vanny Estate, Ojodu, Ikeja, Lagos</span><br><br>
+                <i class="fa-solid fa-phone"></i><span><a href="tel:123456789">+234 907 2345 123</a><br><a href="tel:123456789">+234 801 2346 456</a></span><br><br>
+                <i class="fa-solid fa-envelope"></i><span><a href="https://mail.google.com/">info@magictouch.com</a></span>
+            </div>
+            <div class="footer-right">
+                <p class="footer-company-about">
+                    <span>Useful Links</span>
+                    <p class="footer-links">
+                        <a href="#">Home</a>
+                        |
+                        <a href="#">About</a>
+                        |
+                        <a href="#">Services</a>
+                        |
+                        <a href="#">Contact Us</a>
+                    </p>
+                </p>
+                <div class="footer-icons">
+                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                    <a href="#"><i class="fa-brands fa-snapchat"></i></a>
+                    <a href="#"><i class="fa-brands fa-tiktok"></i></a>
+                </div>
+            </div>
+        </div>
+        <p class="footer-company-name">Copyright © 2022 <strong>MagicTouch</strong> All rights reserved</p>
+    </footer>
+    <!----End Of Footer------>        
+    
+    <script src="BookingTime.js"></script>
+    <script src="./js/navbar.js"></script>
+  </body>
+</html>
